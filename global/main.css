@@ -78,19 +78,24 @@ section{
 }
 
 .krusty-text h1 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 45px;
+}
+.diff{
     color: #b70202;
     font-family: "Londrina Solid", sans-serif;
     font-size: 90px;
     line-height: 1;
     margin: 0 0 45px;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white 
+    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white   
 }
-
-.krusty-text h5 {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
+.krusty-text h4 {
+    font-size: 18px;
     font-weight: 600;
-    color: white; /* Ensure text is visible against the background */
+    color: white;
+    margin-bottom: 10px;
     
 }
 
@@ -105,6 +110,18 @@ section{
 .krusty-img img{
     width: 650px;
     height: auto;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%, 70%{
+        transform: translateY(0rem);
+
+    }
+
+    70%{
+        transform: translateY(0.5rem);
+
+    }
 }
 
 .krusty-text a{
@@ -169,6 +186,18 @@ section{
     margin-top: 100px;
 }
 
+@media (max-width: 1755px){
+
+    .krusty-text h1{
+        font-size: 15px;
+        margin: 0 0 30px;
+    }
+    .diff{
+        font-size: 70px;
+        margin: 0 0 30px;
+    }
+
+}
 @media (max-width: 1535px){
     header{
         padding: 15px 3%;
@@ -200,6 +229,10 @@ section{
         height: auto;
     }
     .krusty-text h1{
+        font-size: 15px;
+        margin: 0 0 30px;
+    }
+    .diff{
         font-size: 50px;
         margin: 0 0 30px;
     }
@@ -242,6 +275,14 @@ section{
         right: 3%;
         transition: .2s;
     }
+    .krusty-text h1{
+        font-size: 10px;
+        margin: 0 0 30px;
+    }
+    .diff{
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
     .navlist{
         position: absolute;
         top: 100%;
@@ -266,6 +307,7 @@ section{
     }
     
 }
+
 
 @media (max-width: 680px){
     .krusty-img img{
