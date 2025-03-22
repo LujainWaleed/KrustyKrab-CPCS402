@@ -498,6 +498,7 @@ section{
     overflow: hidden;
     font-size: 20px; 
     max-width: 700px;
+    
 }
 
 .text-in-box::before {
@@ -521,15 +522,17 @@ section{
     color: #ba4040;
     font-weight: bold;
     background: none;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white    
+    text-shadow: 1px 1px 0px white,3px 3px 0px white,1px 1px 0px white,1px 1px 0px white,2px 2px 0px white    
 }
 
 .Services-explain{
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 90px;
     position: relative;
-    z-index: 2;
+    z-index: 0;
     background: none;
+    text-shadow: 0px 0px 0px black,0px 0px 0px black,0px 0px 0px black,0px 0px 0px black,2px 2px 0px black    
+    
 }
 
 /* Schedule Page */
@@ -787,7 +790,7 @@ cursor: pointer;
 cursor: pointer;
 position: relative;
 background: rgb(175, 221, 249);
-padding: 15px 30px;
+padding: 10px 25px;
 color: #555;
 text-shadow: 0 1px 4ox rgba(0,0,0,.5);
 border-radius: 30px;
